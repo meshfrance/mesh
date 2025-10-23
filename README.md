@@ -34,6 +34,6 @@ Nous mettons aujourd'hui en avant la solution open‑source MeshCore, qui offre 
 - Dépôt MeshFrance : https://github.com/meshfrance/mesh/
 
 ### Contribution
-Contributions bienvenues — merci d'ouvrir une issue ou une pull request. Indiquez la licence souhaitée (ex. MIT, CC‑BY‑SA) dans le fichier LICENSE.
+Contributions bienvenues — merci d'ouvrir une issue ou une pull request.
 
 © 2025 MeshFrance — Ressources communautaires pour réseaux radio mesh en France.
