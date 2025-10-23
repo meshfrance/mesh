@@ -65,54 +65,51 @@
 
   <main class="wrap">
     <section class="intro" id="intro">
-      <h2>Plateforme dédiée aux réseaux radio mesh</h2>
+      <h2>MeshFrance - Plateforme dédiée aux réseaux radio mesh</h2>
       <p>
         MeshFrance centralise documentation technique, guides pratiques, partages de configurations et ressources
         pour concevoir, déployer et maintenir des maillages radio communautaires en France, alimentés par énergie solaire.
       </p>
-
       <h3>Pourquoi construire un réseau radio décentralisé et alimenté par énergie solaire ?</h3>
+      <p>Les réseaux radio solaires ont vocation à renforcer la résilience locale : autonomes en énergie, ils permettent le maintien de communications vitales et sécurisées lors de coupures électriques ou d’interruptions des réseaux de communications (évènements climatiques, cyberattaques, incidents locaux ou nationaux). La mise en place de ces réseaux radio favorise aussi l’entraide et la coordination communautaire. Faciles à déployer et à entretenir, ces systèmes offrent une solution immédiate, pratique et durable pour garantir la continuité des échanges locaux quand les réseaux traditionnels sont indisponibles, avec un coût d'exploitation inexistant.</p>
+      <h3>MeshCore</h3>
       <p>
-        Les réseaux radios alimentés par l'énergie solaire augmentent la résilience locale : lors de catastrophes naturelles ou d'interruptions du réseau électrique,
-        ils maintiennent les communications essentielles. Ils renforcent les liens communautaires en facilitant l'échange d'informations
-        indépendamment des opérateurs, encouragent des projets collectifs et offrent une dimension pédagogique et ludique pour les ateliers
-        d'initiation. En outre, les installations solaires réduisent le coût opérationnel et prolongent l'autonomie des relais déployés en milieu rural.
+        Nous mettons aujourd'hui en avant la solution open‑source <strong>MeshCore</strong>, qui offre des communications radio chiffrées, décentralisées et robustes, avec un écosystème d'applications et d'outils matures et en constante évolution. Depuis le lancement de nouveau protocole de communication, les utilisateurs du réseau <strong>MeshCore</strong> ont réussi à établir des communications de plusieurs centaines de kilomètres, grâce aux relais radio implantés partout en Europe. 
       </p>
-
-      <p>
-        Nous mettons aujourd'hui en avant la solution open‑source <strong>MeshCore</strong>, qui offre des communications radio chiffrées, décentralisées et robustes, avec un écosystème d'applications et d'outils matures et en évolution constante.
-      </p>
-
       <blockquote class="callout">
         MeshCore est une solution multiplateforme permettant des communications textuelles sécurisées via du matériel radio LoRa. Elle est adaptée aux communications hors‑réseau (off‑grid), aux interventions d'urgence et de secours, aux activités extérieures, à la sécurité tactique (forces de l'ordre, sécurité privée) ainsi qu'aux réseaux de capteurs IoT.
       </blockquote>
     </section>
 
     <section id="equipements" class="section">
-      <h3>Équipements recommandés</h3>
-      <p>Principe : un appareil mobile par personne pour émettre et recevoir des messages via MeshCore et un boîtier solaire fixe chez soi, fixé en hauteur et alimenté par un petit panneau solaire, qui permet d'étendre le réseau radio en relayant les messages des utilisateurs du réseau.</p>
+      <h3>Équipements MeshCore recommandés</h3>
+      <p>Principe : un appareil mobile par personne pour émettre et recevoir des messages via MeshCore et un boîtier solaire fixe chez soi, fixé en hauteur et alimenté par un petit panneau solaire, qui permet d'étendre le réseau radio en relayant les messages des utilisateurs du réseau qui se trouvent à proximité.</p>
+        <p>Boîtier mobile (à appairer avec un smartphone) :</p>
+              <ul class="links">
+              <li>&#128073; <a href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-LoRaWAN-p-6408.html" target="_blank" rel="noopener">SenseCAP T1000‑E</a></li>
+              </ul>
+        <p>Boîtier mobile avec écran (utilisable sans smartphone) :</p>
+              <ul class="links">
+              <li>&#128073; <a href="https://meshcore-sar.dz0ny.dev/unstable/latest/index.html" target="_blank" rel="noopener">Liligo t‑Deck Plus</a></li>
+              </ul>
+        <p>Nœud fixe solaire (relai radio fixé en hauteur et alimenté par un petit panneau solaire) :</p>
+              <ul class="links">
+              <li>&#128073; <a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html?srsltid=AfmBOooEZDnx0cw1Fiq1zYDczV4UbPwnfW_L1g_5biKKFqLCkKyOh-S2" target="_blank" rel="noopener">SenseCAP Solar Node P1‑Pro</a></li>
+              </ul>
+    </section>
 
-      <ul class="cards">
-        <li>
-          <h4>Boîtier mobile (à appairer avec un smartphone)</h4>
-          <p><strong>SenseCAP T1000‑E</strong><br/><a href="https://www.seeedstudio.com/SenseCAP-Card-Tracker-T1000-E-for-LoRaWAN-p-6408.html" target="_blank" rel="noopener">seeedstudio.com</a></p>
-        </li>
-
-        <li>
-          <h4>Boîtier mobile (utilisable sans smartphone)</h4>
-          <p><strong>Liligo t‑Deck Plus</strong><br/><a href="https://lilygo.cc/products/t-deck-plus-1?bg_ref=xknMV5FzPY" target="_blank" rel="noopener">lilygo.cc</a></p>
-        </li>
-
-        <li>
-          <h4>Nœud fixe solaire (relai fixe alimenté par un petit panneau solaire)</h4>
-          <p><strong>SenseCAP Solar Node P1‑Pro</strong><br/><a href="https://www.seeedstudio.com/SenseCAP-Solar-Node-P1-Pro-for-Meshtastic-LoRa-p-6412.html?srsltid=AfmBOooEZDnx0cw1Fiq1zYDczV4UbPwnfW_L1g_5biKKFqLCkKyOh-S2" target="_blank" rel="noopener">seeedstudio.com</a></p>
-        </li>
+    <section id="map" class="section">
+      <h3>Configuration des boitiers MeshCore</h3>
+      <p>Outil MeshCore recommandé pour flasher et configurer les boîtiers avant déploiement :</p>
+      <ul class="links">
+      <li>&#128073; <a href="https://flasher.meshcore.co.uk/" target="_blank" rel="noopener">Flasher MeshCore</a></li>
       </ul>
     </section>
 
     <section id="config" class="section">
-      <h3>Configuration MeshCore recommandée pour la France</h3>
-      <p>Préconfiguration EU/UK (Narrow)</p>
+      <h3>Paramétrage radio MeshCore recommandée pour la France</h3>
+      <p>Le paramétrage radio se fait dans l'application MeshCore, une fois que le boitier a été configuré grâce au flasher web MeshCore.</p>
+      <p>La fréquence radio recommandée en France est "EU/UK (Narrow)" :</p>
       <table class="cfg-table" aria-labelledby="config">
         <tbody>
           <tr><th>Fréquence</th><td>869.618 MHz</td></tr>
@@ -121,36 +118,32 @@
           <tr><th>Puissance d'émission</th><td>20 dBm</td></tr>
         </tbody>
       </table>
-
-      <p>Outil MeshCore recommandé pour flasher et configurer les boîtiers avant déploiement :</p>
-      <ul class="links">
-      <li><a href="https://flasher.meshcore.co.uk/" target="_blank" rel="noopener">&#128073; Flasher MeshCore</a></li>
-      </ul>
     </section>
 
     <section id="map" class="section">
       <h3>Carte du réseau MeshCore</h3>
       <p>Consultez la cartographie publique de MeshCore pour visualiser les nœuds et la couverture :</p>
       <ul class="links">
-      <li><a href="https://meshcore.co.uk/map.html" target="_blank" rel="noopener"> &#128073;Carte MeshCore</a></li>
+      <li>&#128073; <a href="https://meshcore.co.uk/map.html" target="_blank" rel="noopener">Carte MeshCore</a></li>
       </ul>
     </section>
 
     <section id="apps" class="section">
       <h3>Applications et intégrations de l'écosystème MeshCore</h3>
+      <p>Voici les applications disponibles aujourd'hui pour le grand public</p>
       <ul class="links">
-        <li><a href="https://meshcore.co.uk/apps.html" target="_blank" rel="noopener">&#128073; Application MeshCore</a></li>
-        <li><a href="https://meshcore-sar.dz0ny.dev/unstable/latest/index.html" target="_blank" rel="noopener">&#128073; MeshCore — Search and Rescue</a></li>
-        <li><a href="https://github.com/meshcore-dev/meshcore-ha" target="_blank" rel="noopener">&#128073; Intégration Home Assistant</a></li>
+        <li>&#128073; <a href="https://meshcore.co.uk/apps.html" target="_blank" rel="noopener">Application MeshCore (Android/iOS)</a></li>
+        <li>&#128073; <a href="https://meshcore-sar.dz0ny.dev/unstable/latest/index.html" target="_blank" rel="noopener">Application MeshCore spécialisée Search and Rescue (Android/iOS/Windows/Mac)</a></li>
+        <li>&#128073; <a href="https://github.com/meshcore-dev/meshcore-ha" target="_blank" rel="noopener">Intégration Home Assistant</a></li>
       </ul>
     </section>
 
     <section id="liens" class="section">
-      <h3>Liens meshCore utiles</h3>
+      <h3>Liens MeshCore utiles</h3>
       <ul class="links">
-        <li><a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md" target="_blank" rel="noopener">Wiki / FAQ</a></li>
-        <li><a href="https://discord.com/invite/bSuST8xvet" target="_blank" rel="noopener">Discord</a></li>
-        <li><a href="https://www.youtube.com/@meshcore-official" target="_blank" rel="noopener">YouTube</a></li>
+        <li>&#128073; <a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md" target="_blank" rel="noopener">Wiki / FAQ</a></li>
+        <li>&#128073; <a href="https://discord.com/invite/bSuST8xvet" target="_blank" rel="noopener">Discord</a></li>
+        <li>&#128073; <a href="https://www.youtube.com/@meshcore-official" target="_blank" rel="noopener">YouTube</a></li>
       </ul>
     </section>
   </main>
