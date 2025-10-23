@@ -177,9 +177,26 @@ body {
 
 /* Responsive */
 @media (max-width:720px) {
-  .header-grid { flex-direction:column; align-items:flex-start; }
-  .topnav { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
-  /* autres règles responsive si besoin */
+  .header-grid { 
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 12px 20px; /* ajoute marges intérieures */
+    gap: 8px;
+  }
+  .brand {
+    width: 100%;
+    padding: 6px 0;
+    gap: 10px;
+  }
+  .brand-text { overflow: hidden; }
+  .brand-text h1 {
+    font-size: 18px;
+    margin: 0;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
+  .site-logo { margin-left: 0; }
 }
 
 /* Cookie banner */
@@ -229,5 +246,6 @@ body {
   color: var(--text);
   border: 1px solid rgba(0,0,0,0.08);
 }
+
 
 
