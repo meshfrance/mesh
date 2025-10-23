@@ -7,13 +7,44 @@
   <meta name="description" content="MeshFrance — documentation, guides et ressources pour concevoir, déployer et maintenir des réseaux radio mesh communautaires en France. Présentation et configurations recommandées pour MeshCore." />
   <meta name="keywords" content="Mesh, MeshCore, LoRa, réseau mesh, radio, off-grid, secours, réseau communautaire, IoT, solaire, maillage radio" />
   <link rel="stylesheet" href="styles.css" />
-  <link rel="icon" href="data:;base64,iVBORw0KGgo=" />
+  <link rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAMAAAAoLQ9TAAAAh1BMVEUAAAD///////////////////////////////////////////////////////////////////////////////////////////////////////////////////8AAABnZ2f///9dXV3q6uq3t7e4uLi9vb2Ojo7Z2dnx8fHc3NzY2NjS0tJsbGxvb287OztOTk5dXV2Pj4+mpqZ1dXUlJSVbW1s+Pj5KSko/Pz9fX1+fn5+QkJBkZGR7e3vExMS8vLxQe2vQAAAAKXRSTlMAAQIDBAUGBwgJCgsMDQ4PEBESExQVFhcYGRobHB0eHyAhIiMkAAAAWklEQVQY02NgQAMYGBgYGBkYGJgYGBgYGBgYmBgYGBgYmBiYGBgYGBgYGBgYGBgYGBgYmBgYGBgYGBgYGBgYGBgYGBgYGBgYAAD0EA1k0rQeAAAAAElFTkSuQmCC" />
   <!-- Open Graph -->
   <meta property="og:title" content="MeshFrance — Réseaux radio mesh" />
   <meta property="og:description" content="Documentation, guides et ressources pour réseaux radio mesh communautaires en France — configurations MeshCore et matériel recommandé." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://github.com/meshfrance/mesh/" />
-  <meta property="og:image" content="https://your-username.github.io/your-repo/og-image.png" />
+  <meta property="og:image" content="https://github.com/meshfrance/mesh/assets/og-image.png" />
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://github.com/meshfrance/mesh/#organization",
+        "name": "MeshFrance",
+        "url": "https://github.com/meshfrance/mesh/",
+        "sameAs": [
+          "https://discord.com/invite/bSuST8xvet",
+          "https://www.youtube.com/@meshcore-official",
+          "https://github.com/meshcore-dev"
+        ],
+        "description": "Plateforme de présentation des réseaux radio mesh en France — documentation, guides et ressources concernant MeshCore.",
+        "logo": "https://github.com/meshfrance/mesh/assets/og-image.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://github.com/meshfrance/mesh/#website",
+        "url": "https://github.com/meshfrance/mesh/",
+        "name": "MeshFrance",
+        "publisher": {
+          "@id": "https://github.com/meshfrance/mesh/#organization"
+        },
+        "inLanguage": "fr-FR"
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
   <header class="site-header">
@@ -37,26 +68,29 @@
       <h2>Plateforme dédiée aux réseaux radio mesh</h2>
       <p>
         MeshFrance centralise documentation technique, guides pratiques, partages de configurations et ressources
-        pour concevoir, déployer et maintenir des maillages radio communautaires en France, alimentés par énergie solaire. 
+        pour concevoir, déployer et maintenir des maillages radio communautaires en France, alimentés par énergie solaire.
+      </p>
 
       <h3>Pourquoi construire un réseau radio décentralisé et alimenté par énergie solaire ?</h3>
       <p>
-        Les réseaux radios alimentés par l'énergie solaires augmentent la résilience locale : lors de catastrophes naturelles ou d'interruptions du réseau électrique,
+        Les réseaux radios alimentés par l'énergie solaire augmentent la résilience locale : lors de catastrophes naturelles ou d'interruptions du réseau électrique,
         ils maintiennent les communications essentielles. Ils renforcent les liens communautaires en facilitant l'échange d'informations
         indépendamment des opérateurs, encouragent des projets collectifs et offrent une dimension pédagogique et ludique pour les ateliers
         d'initiation. En outre, les installations solaires réduisent le coût opérationnel et prolongent l'autonomie des relais déployés en milieu rural.
       </p>
+
+      <p>
+        Nous mettons aujourd'hui en avant la solution open‑source <strong>MeshCore</strong>, qui offre des communications radio chiffrées, décentralisées et robustes, avec un écosystème d'applications et d'outils matures et en évolution constante.
       </p>
-      Nous mettons aujourd'hui en avant la solution open‑source <strong>MeshCore</strong>, qui offre des communications radio chiffrées, décentralisées et robustes, avec un écosystème d'applications et d'outils matures et en évolution constante.
+
       <blockquote class="callout">
         MeshCore est une solution multiplateforme permettant des communications textuelles sécurisées via du matériel radio LoRa. Elle est adaptée aux communications hors‑réseau (off‑grid), aux interventions d'urgence et de secours, aux activités extérieures, à la sécurité tactique (forces de l'ordre, sécurité privée) ainsi qu'aux réseaux de capteurs IoT.
       </blockquote>
-       </p>
     </section>
 
     <section id="equipements" class="section">
       <h3>Équipements recommandés</h3>
-      <p>Principe : Un appareil mobile par personne pour émettre et recevoir des messages via MeshCore et un boitier solaire fixe chez soi, fixé en hauteur et alimenté par un petit panneau solaire, qui permet d'étendre le réseau radio en relayant les messages des utilisateurs du réseau.</p>
+      <p>Principe : un appareil mobile par personne pour émettre et recevoir des messages via MeshCore et un boîtier solaire fixe chez soi, fixé en hauteur et alimenté par un petit panneau solaire, qui permet d'étendre le réseau radio en relayant les messages des utilisateurs du réseau.</p>
 
       <ul class="cards">
         <li>
@@ -78,7 +112,7 @@
 
     <section id="config" class="section">
       <h3>Configuration MeshCore recommandée pour la France</h3>
-      <p class="muted">Préconfiguration EU/UK (Narrow)</p>
+      <p>Préconfiguration EU/UK (Narrow)</p>
       <table class="cfg-table" aria-labelledby="config">
         <tbody>
           <tr><th>Fréquence</th><td>869.618 MHz</td></tr>
@@ -88,38 +122,36 @@
         </tbody>
       </table>
 
-      <p>Outil recommandé pour flasher et configurer les boîtiers avant déploiement :</p>
-      <p><a href="https://flasher.meshcore.co.uk/" target="_blank" rel="noopener">Flasher MeshCore</a></p>
+      <p>Outil MeshCore recommandé pour flasher et configurer les boîtiers avant déploiement :</p>
+      <ul class="links">
+      <li><a href="https://flasher.meshcore.co.uk/" target="_blank" rel="noopener">&#128073; Flasher MeshCore</a></li>
+      </ul>
     </section>
 
     <section id="map" class="section">
       <h3>Carte du réseau MeshCore</h3>
-      <p>Consultez la cartographie publique pour visualiser les nœuds et la couverture :</p>
-      <p><a href="https://meshcore.co.uk/map.html" target="_blank" rel="noopener">Carte MeshCore</a></p>
+      <p>Consultez la cartographie publique de MeshCore pour visualiser les nœuds et la couverture :</p>
+      <ul class="links">
+      <li><a href="https://meshcore.co.uk/map.html" target="_blank" rel="noopener"> &#128073;Carte MeshCore</a></li>
+      </ul>
     </section>
 
     <section id="apps" class="section">
-      <h3>Applications et intégrations</h3>
+      <h3>Applications et intégrations de l'écosystème MeshCore</h3>
       <ul class="links">
-        <li><a href="https://meshcore.co.uk/apps.html" target="_blank" rel="noopener">Application MeshCore</a></li>
-        <li><a href="https://meshcore-sar.dz0ny.dev/unstable/latest/index.html" target="_blank" rel="noopener">MeshCore — Search and Rescue</a></li>
-        <li><a href="https://github.com/meshcore-dev/meshcore-ha" target="_blank" rel="noopener">Intégration Home Assistant</a></li>
+        <li><a href="https://meshcore.co.uk/apps.html" target="_blank" rel="noopener">&#128073; Application MeshCore</a></li>
+        <li><a href="https://meshcore-sar.dz0ny.dev/unstable/latest/index.html" target="_blank" rel="noopener">&#128073; MeshCore — Search and Rescue</a></li>
+        <li><a href="https://github.com/meshcore-dev/meshcore-ha" target="_blank" rel="noopener">&#128073; Intégration Home Assistant</a></li>
       </ul>
     </section>
 
     <section id="liens" class="section">
-      <h3>Liens utiles</h3>
+      <h3>Liens meshCore utiles</h3>
       <ul class="links">
         <li><a href="https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md" target="_blank" rel="noopener">Wiki / FAQ</a></li>
         <li><a href="https://discord.com/invite/bSuST8xvet" target="_blank" rel="noopener">Discord</a></li>
         <li><a href="https://www.youtube.com/@meshcore-official" target="_blank" rel="noopener">YouTube</a></li>
       </ul>
-    </section>
-
-    <section id="cta" class="cta">
-      <h3>Participer</h3>
-      <p>Rejoignez la communauté pour contribuer, tester et déployer des nœuds près de chez vous.</p>
-      <p><a class="btn" href="https://discord.com/invite/bSuST8xvet" target="_blank" rel="noopener">Rejoindre Discord</a></p>
     </section>
   </main>
 
