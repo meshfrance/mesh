@@ -252,7 +252,7 @@ body {
     flex-direction: column;
     align-items: flex-start;
   }
-}
+
   .cookie-banner {
   position: fixed;
   left: 0;
@@ -266,11 +266,8 @@ body {
   font-size: 14px;
   }
   
-.cookie-inner { max-width: 980px; margin: 0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px; }
-.cookie-actions button { background:#fff; color:#111; border:0; padding:8px 12px; border-radius:4px; cursor:pointer; }
-.cookie-actions button#cookie-reject { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.2); }
-@media (max-width:640px){ .cookie-inner { flex-direction:column; align-items:flex-start; } }
-  
+  .cookie-inner { max-width: 980px; margin: 0 auto; display:flex; align-items:center; justify-content:space-between; gap:12px; }
+  .cookie-actions button { background:#fff; color:#111; border:0; padding:8px 12px; border-radius:4px; cursor:pointer; }
+  .cookie-actions button#cookie-reject { background:transparent; color:#fff; border:1px solid rgba(255,255,255,0.2); }
+  @media (max-width:640px){ .cookie-inner { flex-direction:column; align-items:flex-start; } }
 }
-
-
