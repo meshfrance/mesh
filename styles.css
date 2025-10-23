@@ -178,8 +178,11 @@ body {
 /* Responsive */
 @media (max-width:720px) {
   .header-grid { flex-direction:column; align-items:flex-start; }
-  .topnav { display:flex; flex-wrap:wrap; gap:8px; margin-top
+  .topnav { display:flex; flex-wrap:wrap; gap:8px; margin-top:12px; }
+  /* autres règles responsive si besoin */
+}
 
+/* Cookie banner */
 .cookie-banner {
   position: fixed;
   left: 0;
@@ -196,6 +199,35 @@ body {
   align-items: center;
   z-index: 9999;
 }
-.cookie-banner .btn { margin-left:auto; }
+.cookie-banner .cookie-inner {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+.cookie-banner p {
+  margin: 0;
+  color: var(--text);
+  font-size: 14px;
+}
+.cookie-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+.cookie-actions button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.cookie-actions button#cookie-reject {
+  background: transparent;
+  color: var(--text);
+  border: 1px solid rgba(0,0,0,0.08);
+}
 
 
