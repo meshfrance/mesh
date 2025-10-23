@@ -164,4 +164,46 @@
     document.getElementById('year').textContent = new Date().getFullYear();
   </script>
 </body>
+
+  <div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-inner">
+    <p>Ce site utilise des cookies pour améliorer l'expérience. En continuant, vous acceptez l'utilisation de cookies.</p>
+    <div class="cookie-actions">
+      <button id="cookie-accept">Accepter</button>
+      <button id="cookie-reject">Refuser</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(function(){
+  const banner = document.getElementById('cookie-banner');
+  const accept = document.getElementById('cookie-accept');
+  const reject = document.getElementById('cookie-reject');
+  const key = 'meshfrance_cookie_consent';
+
+  function showIfNeeded(){
+    try {
+      const v = localStorage.getItem(key);
+      if (!v) banner.style.display = 'block';
+    } catch(e){ banner.style.display = 'block'; }
+  }
+
+  accept.addEventListener('click', () => {
+    try { localStorage.setItem(key, 'accepted'); } catch(e){}
+    banner.style.display = 'none';
+    // placez ici l'initialisation des cookies/analytics si nécessaire
+  });
+
+  reject.addEventListener('click', () => {
+    try { localStorage.setItem(key, 'rejected'); } catch(e){}
+    banner.style.display = 'none';
+    // évitez d'initialiser les cookies/trackers
+  });
+
+  showIfNeeded();
+})();
+</script>
+
 </html>
+
