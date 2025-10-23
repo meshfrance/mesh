@@ -1,4 +1,4 @@
-## MeshFrance
+## MeshFrance - www.meshfrance.org
 
 Présentation, documentation et ressources pour concevoir, déployer et maintenir des réseaux radio mesh communautaires en France, avec un focus sur MeshCore et les déploiements alimentés par énergie solaire.
 
@@ -6,8 +6,6 @@ Présentation, documentation et ressources pour concevoir, déployer et mainteni
 - Documentation technique et guides pratiques
 - Configurations recommandées pour la France (paramètres radio, procédures)
 - Fiches matériel (boîtiers mobiles, nœuds solaires) et liens utiles
-- Outils : Flasher MeshCore, guides de déploiement
-- Cartographie publique des nœuds et intégrations (apps, Home Assistant)
 
 ### Pourquoi MeshFrance ?
 MeshFrance promeut des réseaux radio autonomes et solaires pour renforcer la résilience locale : maintenir des communications vitales hors‑réseau lors de coupures ou d'incidents, réduire les coûts d'exploitation, faciliter les déploiements communautaires et offrir une valeur pédagogique pour la formation de volontaires.
