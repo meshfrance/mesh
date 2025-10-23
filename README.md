@@ -19,6 +19,9 @@ MeshFrance promeut des réseaux radio autonomes et solaires pour renforcer la r�
 | Boîtier mobile avec écran | Liligo t‑Deck Plus |
 | Nœud fixe solaire (relai) | SenseCAP Solar Node P1‑Pro |
 
+### Protocole radio recommandé : MeshCore ?
+Nous mettons aujourd'hui en avant la solution open‑source MeshCore, qui offre des communications radio chiffrées, décentralisées et robustes, avec un écosystème d'applications et d'outils matures et en constante évolution. Depuis le lancement de nouveau protocole de communication, les utilisateurs du réseau MeshCore ont réussi à établir des communications de plusieurs centaines de kilomètres, grâce aux relais radio implantés partout en Europe. 
+
 ### Paramètres radio recommandés (France — "EU/UK (Narrow)")
 | Paramètre | Valeur |
 |---|---|
@@ -27,19 +30,7 @@ MeshFrance promeut des réseaux radio autonomes et solaires pour renforcer la r�
 | Spreading Factor | 8 |
 | Puissance d'émission | 20 dBm |
 
-### Déploiement rapide
-1. Flasher le boîtier avec le Flasher MeshCore : https://flasher.meshcore.co.uk/  
-2. Appliquer les paramètres radio recommandés.  
-3. Installer le nœud solaire en hauteur, orienter le panneau et sécuriser l'alimentation.  
-4. Appairer les appareils mobiles et vérifier la couverture sur la carte publique.  
-5. Organiser un atelier d'initiation pour former des volontaires locaux.
-
 ### Liens utiles
-- Flasher MeshCore : https://flasher.meshcore.co.uk/  
-- Carte MeshCore : https://meshcore.co.uk/map.html  
-- Wiki / FAQ MeshCore : https://github.com/meshcore-dev/MeshCore/blob/main/docs/faq.md  
-- Discord : https://discord.com/invite/bSuST8xvet  
-- YouTube : https://www.youtube.com/@meshcore-official  
 - Dépôt MeshFrance : https://github.com/meshfrance/mesh/
 
 ### Contribution
