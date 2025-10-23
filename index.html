@@ -153,7 +153,6 @@
   </div>
 </footer>
 
-<!-- Bannière cookies (dans le body, initialement cachée) -->
 <div id="cookie-banner" class="cookie-banner" role="dialog" aria-modal="true" aria-hidden="true" aria-label="Bannière de cookies">
   <div class="cookie-inner">
     <p>Ce site utilise des cookies pour améliorer l'expérience. En continuant, vous acceptez l'utilisation de cookies.</p>
@@ -164,8 +163,45 @@
   </div>
 </div>
 
-<script src="main.js"></script>
+<script>
+(function(){
+  const banner = document.getElementById('cookie-banner');
+  const acceptBtn = document.getElementById('cookie-accept');
+  const rejectBtn = document.getElementById('cookie-reject');
+  if(!banner || !acceptBtn || !rejectBtn) return;
+
+  const key = 'mc_cookie_consent';
+  const state = localStorage.getItem(key);
+  if(state === 'accepted' || state === 'rejected') {
+    banner.setAttribute('aria-hidden','true');
+    banner.style.display = 'none';
+    return;
+  }
+
+  // Show banner
+  banner.setAttribute('aria-hidden','false');
+  banner.style.display = 'flex';
+
+  function hide(val){
+    try{ localStorage.setItem(key, val); }catch(e){}
+    banner.setAttribute('aria-hidden','true');
+    banner.style.transition = 'opacity .2s';
+    banner.style.opacity = '0';
+    setTimeout(()=>{ banner.style.display='none'; }, 220);
+  }
+
+  acceptBtn.addEventListener('click', ()=> hide('accepted'));
+  rejectBtn.addEventListener('click', ()=> hide('rejected'));
+
+  // optional: close on Escape
+  document.addEventListener('keydown', (e)=>{
+    if(e.key === 'Escape') hide('rejected');
+  });
+})();
+</script>
+
 </body>
 </html>
+
 
 
