@@ -43,7 +43,7 @@ body {
 
 .brand { display:flex; align-items:center; gap:12px; }
 
-/* ADJUSTED: larger logo and text for better visual balance */
+/* Default logo/text (will be overridden by later rules for visual scale) */
 .site-logo { height:56px; width:auto; display:block; }
 .brand-text h1 { margin:0; font-size:26px; color:var(--accent); }
 .brand-text .tagline { margin:6px 0 0; color:var(--muted); font-size:15px; }
@@ -182,7 +182,7 @@ body {
   .header-grid { 
     flex-direction: column; 
     align-items: flex-start; 
-    padding: 12px 20px; /* ajoute marges intérieures */
+    padding: 12px 20px;
     gap: 8px;
   }
   .brand {
@@ -256,24 +256,65 @@ body {
 }
 
 /* Reduced header height adjustments (applied after defaults) */
+/* Keep the same outer header padding values used earlier (compact header),
+   but increase visual scale of logo and text inside without growing header height. */
 .site-header .header-grid {
-  padding-top: 10px;   /* reduced from 18px */
-  padding-bottom: 10px;/* reduced from 18px */
-  gap: 12px;           /* reduced from 20px */
+  padding-top: 10px;
+  padding-bottom: 10px;
+  gap: 12px;
 }
 
-/* Logo & text made more compact */
-.site-logo { height:44px; }         /* reduced from 56px */
-.brand-text h1 { font-size:20px; }  /* reduced from 26px */
-.brand-text .tagline { font-size:13px; margin-top:4px; }
+/* Increase visual size of logo and brand text while constraining their vertical footprint */
+.site-logo {
+  height: 64px;
+  max-height: 64px;
+  width: auto;
+  display: block;
+  margin-top: -6px;
+  margin-bottom: -6px;
+}
 
-/* Mobile adjustments for compact header */
+.brand-text h1 {
+  font-size: 30px;
+  line-height: 1;
+  margin: 0;
+  color: var(--accent);
+  transform: translateY(-2px);
+}
+
+.brand-text .tagline {
+  font-size: 14px;
+  margin-top: 2px;
+  color: var(--muted);
+  line-height: 1;
+}
+
+/* Allow slight overflow/negative margins for internal centering without increasing header height */
+.header-grid,
+.site-header {
+  overflow: visible;
+}
+
+/* Mobile: larger proportions but constrained to header height */
 @media (max-width:720px) {
-  .site-header .header-grid { padding-top:8px; padding-bottom:8px; }
-  .site-logo { height:40px; }
-  .brand-text h1 { font-size:18px; }
   .site-header .header-grid {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    gap: 8px;
     padding-left: 20px;
     padding-right: 20px;
+  }
+  .site-logo {
+    height: 56px;
+    max-height: 56px;
+    margin-top: -4px;
+    margin-bottom: -4px;
+  }
+  .brand-text h1 {
+    font-size: 22px;
+    transform: translateY(-1px);
+  }
+  .brand-text .tagline {
+    font-size: 12px;
   }
 }
